@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <form method="post" action="output.php">
+            <input type="text" id="name" placeholder="Name" name="name" required>
+            <input type="email" id="email" placeholder="Email" name="email" required>
+            <select name="option" required>
+                <option disabled selected value> --Select option-- </option>
+                <option>Query</option>
+                <option>Feedback</option>
+                <option>Complaint</option>
+                <option>Other</option>
+            </select>
+            <textarea id="message" rows="6" cols="50" placeholder="Enter your message" name="message" required></textarea>
+            <button type="submit" name="submit">SEND</button>
+        </form>
+    </body>
+</html>
